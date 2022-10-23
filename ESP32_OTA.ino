@@ -43,7 +43,7 @@ TinyGsm modem(SerialAT);
 
 TinyGsmClient client(modem,0);
 
-const char server[] = "35.178.127.202";
+const char server[] = "35.178.127.xxx";
 const int port = 80;
 const char resource[] = "/esp/esp.bin"; //here de bin file
 
@@ -206,7 +206,7 @@ void loop()
 
     float duration = float(timeElapsed) / 1000;
     /*
-      Serial.print("Tamaño de Archivo: ");
+      Serial.print("TamaÃ±o de Archivo: ");
       Serial.println(contentLength);
       Serial.print("Leido:  ");
       Serial.println(readLength);
@@ -368,7 +368,7 @@ void updateFromFS()
         }
         else
         {
-            Serial.println("Error, archivo vacío");
+            Serial.println("Error, archivo vacÃ­o");
         }
 
         updateBin.close();
